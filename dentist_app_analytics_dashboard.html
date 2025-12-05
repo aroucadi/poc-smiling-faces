@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Analytics Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3ecaea",
+              "background-light": "#f6f8f8",
+              "background-dark": "#111e21",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111618] dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center bg-[#111618] p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h1 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Analytics Dashboard</h1>
+<div class="flex size-12 shrink-0 items-center"></div> <!-- Spacer for centering -->
+</header>
+<!-- Chips -->
+<div class="flex gap-3 p-4">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#293538] px-4">
+<p class="text-white text-sm font-medium leading-normal">Last 30 Days</p>
+<span class="material-symbols-outlined text-white text-xl">expand_more</span>
+</button>
+</div>
+<!-- KPI Cards -->
+<div class="flex flex-col gap-4 px-4 py-2">
+<!-- Profile Views Chart -->
+<div class="flex flex-1 flex-col gap-2 rounded-xl border border-[#3c4f53] p-6">
+<p class="text-white text-base font-medium leading-normal">Profile Views</p>
+<p class="text-white tracking-light text-[32px] font-bold leading-tight truncate">1,482</p>
+<div class="flex items-center gap-1">
+<p class="text-[#9db3b8] text-sm font-normal leading-normal">Last 30 days</p>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[#12B76A] text-lg">arrow_upward</span>
+<p class="text-[#12B76A] text-sm font-medium leading-normal">+15.2%</p>
+</div>
+</div>
+<div class="flex min-h-[140px] flex-1 flex-col gap-4 pt-4">
+<svg fill="none" height="110" preserveaspectratio="none" viewbox="-3 0 478 112" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="chartGradient" x1="236" x2="236" y1="0" y2="112">
+<stop stop-color="#3ecaea" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#3ecaea" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0 81.75C18.1538 81.75 18.1538 15.75 36.3077 15.75C54.4615 15.75 54.4615 30.75 72.6154 30.75C90.7692 30.75 90.7692 69.75 108.923 69.75C127.077 69.75 127.077 24.75 145.231 24.75C163.385 24.75 163.385 75.75 181.538 75.75C199.692 75.75 199.692 45.75 217.846 45.75C236 45.75 236 33.75 254.154 33.75C272.308 33.75 272.308 90.75 290.462 90.75C308.615 90.75 308.615 111.75 326.769 111.75C344.923 111.75 344.923 0.75 363.077 0.75C381.231 0.75 381.231 60.75 399.385 60.75C417.538 60.75 417.538 96.75 435.692 96.75C453.846 96.75 453.846 18.75 472 18.75V111.75H0V81.75Z" fill="url(#chartGradient)"></path>
+<path d="M0 81.75C18.1538 81.75 18.1538 15.75 36.3077 15.75C54.4615 15.75 54.4615 30.75 72.6154 30.75C90.7692 30.75 90.7692 69.75 108.923 69.75C127.077 69.75 127.077 24.75 145.231 24.75C163.385 24.75 163.385 75.75 181.538 75.75C199.692 75.75 199.692 45.75 217.846 45.75C236 45.75 236 33.75 254.154 33.75C272.308 33.75 272.308 90.75 290.462 90.75C308.615 90.75 308.615 111.75 326.769 111.75C344.923 111.75 344.923 0.75 363.077 0.75C381.231 0.75 381.231 60.75 399.385 60.75C417.538 60.75 417.538 96.75 435.692 96.75C453.846 96.75 453.846 18.75 472 18.75" stroke="#3ecaea" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="flex justify-around">
+<p class="text-[#9db3b8] text-xs font-bold leading-normal tracking-[0.015em]">W1</p>
+<p class="text-[#9db3b8] text-xs font-bold leading-normal tracking-[0.015em]">W2</p>
+<p class="text-[#9db3b8] text-xs font-bold leading-normal tracking-[0.015em]">W3</p>
+<p class="text-[#9db3b8] text-xs font-bold leading-normal tracking-[0.015em]">W4</p>
+</div>
+</div>
+</div>
+<!-- Smaller Stats Cards -->
+<div class="grid grid-cols-2 gap-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl border border-[#3c4f53] p-4">
+<p class="text-white text-sm font-medium leading-normal">Post Engagement Rate</p>
+<p class="text-white tracking-light text-2xl font-bold leading-tight">4.7%</p>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[#12B76A] text-lg">arrow_upward</span>
+<p class="text-[#12B76A] text-sm font-medium leading-normal">+2.1%</p>
+</div>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl border border-[#3c4f53] p-4">
+<p class="text-white text-sm font-medium leading-normal">Leads Generated</p>
+<p class="text-white tracking-light text-2xl font-bold leading-tight">28</p>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[#12B76A] text-lg">arrow_upward</span>
+<p class="text-[#12B76A] text-sm font-medium leading-normal">+12.5%</p>
+</div>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl border border-[#3c4f53] p-4 col-span-2">
+<p class="text-white text-sm font-medium leading-normal">Appointments Booked</p>
+<p class="text-white tracking-light text-2xl font-bold leading-tight">12</p>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[#F04438] text-lg">arrow_downward</span>
+<p class="text-[#F04438] text-sm font-medium leading-normal">-3.0%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Header -->
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Top Performing Posts</h3>
+<!-- Top Performing Posts List -->
+<div class="flex flex-col gap-3 px-4">
+<!-- Post 1 -->
+<div class="flex items-center gap-4 rounded-lg p-3 bg-[#1A2427]">
+<img class="h-20 w-20 rounded-lg object-cover" data-alt="Close-up of a dental procedure on a patient's teeth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDElzC4IlljotqALBm_9uaNIOo533BPctz56yaBMfnqUSg1Ar_2Mi3mfozCd4h2TikihawIJg5k_vhX6LHUqHp_ObI8TIj0a73I7vV9EC3yJ08ry18h5M-q4ttdzp-ghZfsk15MU5v1ADsGsn6km-SNLAZaD1ltES36UK0CWnu0xOvLX1hxWly_pMWYqCUL7ExUWSu-7SatVmAWVH93rRXsaBqBSPnS9gn9_E90so2O9k2Y3QhJl2EGvCoqGaab_KCrcdBMguWsn7I"/>
+<div class="flex-1">
+<p class="text-white font-medium text-sm line-clamp-2">"Here's a look at a recent cosmetic bonding case. Incredible transformation!"</p>
+<p class="text-sm text-[#9db3b8] mt-1">Views: 2.1k, Likes: 124</p>
+</div>
+</div>
+<!-- Post 2 -->
+<div class="flex items-center gap-4 rounded-lg p-3 bg-[#1A2427]">
+<img class="h-20 w-20 rounded-lg object-cover" data-alt="A dentist smiling warmly while holding dental tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB324axrfkhzWr3oW_GGCzewRPGGnsTHzaNKiKw7DWFkSTJLmGuMV3QP9aYLHRNQA7cO2HLtKgJ9kNQ9pqRKpkPjr-Sn-yee6oS3qb7jamn-GvHUy9fv2W92styTSDbDC4BV0RpNe71Ah53kK0kqQCNrRw2nnsxiMynH3yw3_UpAISync7Vci98kbu2IhiLEU--sRy_nBRrraqTXSkGB6c6C6o8Lk0CA4TTLJtlcupfn4GXUmBTatPj5SgbXPU8yHTXcshPUL4MMQ"/>
+<div class="flex-1">
+<p class="text-white font-medium text-sm line-clamp-2">"Meet the team! We're dedicated to making your smile shine."</p>
+<p class="text-sm text-[#9db3b8] mt-1">Views: 1.8k, Likes: 102</p>
+</div>
+</div>
+<!-- Post 3 -->
+<div class="flex items-center gap-4 rounded-lg p-3 bg-[#1A2427]">
+<img class="h-20 w-20 rounded-lg object-cover" data-alt="A detailed image showing the process of creating dental veneers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqaSvzf5z-tP83elYqSr9BqwQGuLpXRJCEXoWmt2FeieG94MWhQM7N61R4ToiB6Bx2DKBVe9VtboJ4dmmFycAxaXh7IzkqXlCWaLHHJbv63hVQ7Iq4ZJ7Jwnx4jhK86JHiloeIDZ9YJyUduCrOCx4t2Gl0XCvxL9zm9qn85FE1j8Welq9e_IMqMYvMuu9hmbhVCf71b0M0M157n4sbtgAWOld9WTljuKG7t-cAvTi3N83zdDZzCclMGeldcY2CxqWL1xHjeq1Ajxc"/>
+<div class="flex-1">
+<p class="text-white font-medium text-sm line-clamp-2">"The art of creating natural-looking veneers. Precision and care in every step."</p>
+<p class="text-sm text-[#9db3b8] mt-1">Views: 1.2k, Likes: 89</p>
+</div>
+</div>
+</div>
+<!-- Section Header -->
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Visibility Ranking</h3>
+<!-- Visibility Ranking Card -->
+<div class="px-4 pb-8">
+<div class="flex flex-col gap-2 rounded-xl border border-[#3c4f53] p-6 text-center">
+<p class="text-[#9db3b8] text-sm">You rank</p>
+<p class="text-primary tracking-light text-4xl font-bold leading-tight">#47</p>
+<p class="text-white text-base">in <span class="font-semibold">Cosmetic Dentistry</span></p>
+<p class="text-[#9db3b8] text-sm">within Los Angeles, CA</p>
+</div>
+</div>
+</div>
+</body></html>

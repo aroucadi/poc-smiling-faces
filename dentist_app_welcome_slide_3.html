@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convert Leads to Appointments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4ec0da",
+              "background-light": "#f6f7f8",
+              "background-dark": "#121d20",
+              "dental-blue": "#4A90E2",
+              "dental-text-dark": "#333333",
+              "dental-inactive": "#CED4DA",
+              "dental-accent": "#50E3C2",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden p-4 sm:p-6 md:p-8">
+<div class="flex flex-1 flex-col items-center justify-between">
+<div class="w-full max-w-sm">
+<!-- Progress Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-dental-inactive"></div>
+<div class="h-2 w-2 rounded-full bg-dental-inactive"></div>
+<div class="h-2 w-2 rounded-full bg-dental-blue"></div>
+</div>
+</div>
+<div class="flex flex-1 flex-col items-center justify-center">
+<!-- Illustration/Graphic -->
+<div class="px-4 py-3 w-full max-w-xs">
+<div class="w-full bg-center bg-no-repeat bg-contain flex flex-col justify-end overflow-hidden bg-transparent min-h-64" data-alt="Stylized illustration of a mobile calendar with confirmed appointments" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDoElyV3BmFJeH_yuU4SXDrPzBkGfTjJWc_IU6tuuFyZ4ee57-JA_U8cGImGtvdqGwC4MakZ7RTXMUSPS8QmFKLc9oxFM0zja73tIu4eP7G_aect-W_9WYxHazk730FrqetxSWTreK8KTNabT3-a6ht7R3PTeItrQ3uLiZpCo8rCTIuaprW6UyKtUSNqN6R5c8IZuQX6up3E2NZVXY_GjYc2eY5XmLA3yGVqgz1HnhXe20TjhJ-Kjc6QFI5MZtAVwxqWti6EiCp0Y");'></div>
+</div>
+<!-- Headline -->
+<h1 class="text-dental-text-dark dark:text-background-light tracking-tight text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Convert Leads to Appointments</h1>
+<!-- Body Text -->
+<p class="text-dental-text-dark dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-md">
+                    Seamlessly manage your leads and turn interest into scheduled patient visits directly within the app.
+                </p>
+</div>
+<div class="w-full max-w-sm">
+<!-- Primary CTA Button -->
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-dental-blue text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<!-- Secondary Action -->
+<div class="flex px-4 pt-1 pb-4">
+<a class="w-full text-center text-dental-text-dark dark:text-gray-300 text-sm font-medium underline" href="#">Skip for now</a>
+</div>
+</div>
+</div>
+</div>
+</body></html>
