@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome Carousel - Slide 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4ec0da",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121d20",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex flex-col grow justify-between p-4">
+<!-- Content Area -->
+<div class="flex flex-col items-center justify-center grow">
+<!-- HeaderImage -->
+<div class="@container w-full max-w-md">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-80" data-alt="A split-screen before-and-after image of a dental procedure, showcasing teeth whitening. The left side shows yellowish teeth, and the right side shows perfectly white teeth." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSMAJUIzEmWeaktI95Sp5P2laNe67bDjw_w_-MIbIDL7SPU1XjtFRZLqqsEd76rax4Zv2U6NgJGr6ZFOqD4k_YdU7TrMJZB7qk0m0LMhFKA3UIh3Y8V4iGd999IFY4JMS8xyq3orB-hzvM_SGRe8qwGiK_MWMRtP__Wau6cewa0pZTou9lcC1lBqw3GMgZXaRb5_PhUZdXRk5fJG2wof6uSdF4x1pQZ4Z53mqry4lLWhkrKZGw6f7TSFI9-dE3sp1iAM5cDrMxFoM");'></div>
+</div>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-gray-800 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Post your best work</h1>
+<!-- BodyText -->
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-sm">Showcase your skills with stunning before-and-after case studies.</p>
+</div>
+<!-- Navigation Area -->
+<div class="flex flex-col items-center">
+<!-- PageIndicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+</div>
+<!-- ButtonGroup -->
+<div class="flex justify-stretch w-full max-w-md">
+<div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-between">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-transparent text-gray-800 dark:text-white text-base font-bold leading-normal tracking-[0.015em] flex-1">
+<span class="truncate">Skip</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] flex-1">
+<span class="truncate">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

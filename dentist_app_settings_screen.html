@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#319795",
+              "background-light": "#FFFFFF",
+              "background-dark": "#101f22",
+              "text-light-primary": "#2D3748",
+              "text-dark-primary": "#f6f8f8",
+              "text-light-secondary": "#718096",
+              "text-dark-secondary": "#a0aec0",
+              "border-light": "#e2e8f0",
+              "border-dark": "#2d3748",
+              "surface-light": "#f6f8f8",
+              "surface-dark": "#1a2a2d",
+              "destructive": "#E53E3E"
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark px-4 py-3">
+<h1 class="flex-1 text-center text-xl font-bold leading-tight tracking-[-0.015em] text-text-light-primary dark:text-text-dark-primary">Settings</h1>
+</div>
+<div class="flex-grow pb-24">
+<!-- Profile Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Profile</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Edit Profile</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+</div>
+<!-- Account Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Account</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-text-light-primary dark:text-text-dark-primary">Email Address</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">dentist@smile.com</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<hr class="border-border-light dark:border-border-dark"/>
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">key</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Change Password</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<hr class="border-border-light dark:border-border-dark"/>
+<div class="flex items-center gap-4 px-4 py-3.5">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Push Notifications</p>
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" role="switch" type="button">
+<span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+</button>
+</div>
+</div>
+<!-- Instagram Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Instagram</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.122 2.122c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.122 2.122c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.122-2.122c-.247-.636-.416-1.363-.465-2.427C2.013 15.098 2 14.744 2 12.315s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.122-2.122c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7.042c-2.733 0-4.967 2.234-4.967 4.967s2.234 4.967 4.967 4.967 4.967-2.234 4.967-4.967S14.733 7.042 12 7.042zM12 15.25c-1.78 0-3.237-1.457-3.237-3.237s1.457-3.237 3.237-3.237 3.237 1.457 3.237 3.237-1.457 3.237-3.237 3.237zM16.636 7.604a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-text-light-primary dark:text-text-dark-primary">Connected</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">as @dr_smilebright</p>
+</div>
+</div>
+<div class="mt-4 flex gap-3">
+<button class="flex-1 rounded-lg bg-primary/20 px-4 py-2.5 text-sm font-semibold text-primary">Reconnect</button>
+<button class="flex-1 rounded-lg bg-destructive/20 px-4 py-2.5 text-sm font-semibold text-destructive">Disconnect</button>
+</div>
+</div>
+<!-- Subscription Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Subscription</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-text-light-primary dark:text-text-dark-primary">Current Plan</p>
+<p class="text-sm font-semibold text-primary">Pro Tier</p>
+</div>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+</div>
+<!-- Support Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Support</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">quiz</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">FAQ</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<hr class="border-border-light dark:border-border-dark"/>
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Contact Us</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<hr class="border-border-light dark:border-border-dark"/>
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">play_circle</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Video Tutorials</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+</div>
+<!-- Legal Section -->
+<h2 class="px-4 pb-2 pt-6 text-sm font-bold uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary">Legal</h2>
+<div class="mx-4 overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Terms of Service</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+<hr class="border-border-light dark:border-border-dark"/>
+<a class="flex items-center gap-4 px-4 py-3.5" href="#">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-light-primary dark:text-text-dark-primary">Privacy Policy</p>
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">chevron_right</span>
+</a>
+</div>
+<!-- Logout Button -->
+<div class="px-4 pt-8">
+<button class="w-full rounded-lg bg-destructive px-4 py-3 text-center text-base font-semibold text-white">Logout</button>
+</div>
+</div>
+</div>
+</body></html>

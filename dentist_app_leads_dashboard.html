@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leads Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3ecaea",
+              "background-light": "#f6f8f8",
+              "background-dark": "#111e21",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-zinc-900 dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+<h2 class="text-zinc-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Your Leads</h2>
+<div class="flex size-12 shrink-0 items-center justify-end">
+<span class="material-symbols-outlined text-3xl text-zinc-900 dark:text-white">more_vert</span>
+</div>
+</div>
+<!-- Chips / Filters -->
+<div class="flex gap-3 p-4 bg-white dark:bg-background-dark overflow-x-auto sticky top-[72px] z-10">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary pl-4 pr-3 text-white">
+<p class="text-sm font-semibold leading-normal">This Week</p>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-200 pl-4 pr-3 text-zinc-800">
+<p class="text-sm font-medium leading-normal">This Month</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:text-zinc-200 pl-4 pr-3 text-zinc-800">
+<p class="text-sm font-medium leading-normal">All Time</p>
+</button>
+</div>
+<main class="p-4 flex flex-col gap-4">
+<!-- Lead Card 1 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex gap-4 justify-between items-start">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Avatar of Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsxchCh_EDX25RB-PvZEmucNGyQdzcyMODcAFXpqP5BgSWUEADrE7OfAqkyT5rpLdblPaIakbc04kZW-29aUrb3nVzEZJ8R5m8efSsCN-mDJYli2XH5gD4ymYTxTKqVbvZzqZJS0OOlXp88U746Bqy9MGzRa9qc6o1ctMnIGI5ZiCL5tnsxEWY63BVdr-tpUA0lbAS02xInVPEbH6eAxJ4bafXAh5LA_UzbjAuQ9NmfedaS2fT7KjOy0qNhmCsPAK5_Qj1IODrW3k");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-zinc-900 dark:text-white text-base font-semibold leading-normal">Jane Doe</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">New York, NY</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Interested in: Veneers</p>
+</div>
+</div>
+<div class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-semibold px-3 py-1 rounded-full shrink-0">New</div>
+</div>
+<div class="w-full h-20 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Thumbnail of social media post showing a smiling person with perfect teeth" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQnUqTFSApEgR-YGyhEbBmKZHKKlKfV80bCirkOPDz0rtJGjrPP1MWiPO_DJysQGi29jn59z4wfUrz_xB5P2XK8_QOPT5qsX1kbz0O2gYbxer0gIFMXbkWNXYcnLTCID86ELubYVibwMyv_TwU4-PmBrgyzzTTvzss6oSpedHW4Tatta-PC6FHwuzhT8leY-7IU4lATHO_GILJuI13Ce6VDX9Ww3LwAHxoK8OCOFmlmhhhbzBouqX36DbNXy_dz04c5S6zn9H41t8");'></div>
+<div class="flex gap-2 justify-stretch flex-wrap">
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-200 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Message</span>
+</button>
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book</span>
+</button>
+</div>
+</div>
+<!-- Lead Card 2 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex gap-4 justify-between items-start">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Avatar of John Smith" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCI-w7Xlk1wdrsxvYp3GS1paOJ4eLARHn-n1dArrxJIQo1t86EVxjxHbad7eLk6dpFjGybCWQx8vaAV5cpzVetvsUBeL8uQWqV38zxL2R1O_DI8KC2eaFigYxlya9TgXlw_KRgatMK-1s17xwiMDnLVEi9U5xtx4czm_J7QUhoNWE4HBDy4yBkQOo6Wu0nTljUJn3LiZpwB8_oJOyRaLpa5k0fx4E85oOHWvMez1p9xTaTtwriPyr6HbW7KR7Xp9WIB-0woNdFa5JE");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-zinc-900 dark:text-white text-base font-semibold leading-normal">John Smith</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Los Angeles, CA</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Interested in: Implants</p>
+</div>
+</div>
+<div class="bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 text-xs font-semibold px-3 py-1 rounded-full shrink-0">Scheduled</div>
+</div>
+<div class="w-full h-20 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Thumbnail of social media post showing a dental implant diagram" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDN8H6daWiE7rtkRaCBCs_nAjynlM6pmJU1nm9hmw0gOe-SngmUnhiBdo7nvT5ZDK6pfOCt1is3JNZyJSz7Fr528Vz9Lf1KbunF5guPn4DvopJoJmEZ8ZPjtXRXnOQrP9djb88g7U8VNvNT9MtNQFZ19rx9CE81WwIudxVQa269Ur7Eu900DrPdKH0WB_NupFw1p310xPfxvVadLNu7MUtKI9Y741rFcTBlEVuGnf4IjUrCQNy-l7Vxzr7fyL07o8n6AubdJpisICc");'></div>
+<div class="flex gap-2 justify-stretch flex-wrap">
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-200 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Message</span>
+</button>
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book</span>
+</button>
+</div>
+</div>
+<!-- Lead Card 3 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex gap-4 justify-between items-start">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Avatar of Emily White" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnh7a9P_Hn96afWdOe567qetqtObHng7XkoCt1h7lgyfDz2GjHr84KdQRvSPmCbNwvBwjH37alkZmEcqwSdEzS-Nfp-I5iY7cfmq1ilUuXpTc5u0aLC7oXxs6DrwsIvZYyWIprwrlvGT2t_c1yV_hHmb8AIHknckMuSM_bT2VqD-uV-AYVDnbh7ko5oGpyxRMTapTwDDyZT_i9N1S_sjtTs9G_pJZaPN9R6ak8ZK8nYeG9NzsotE5MaqTcyy9O8XVrC27sKW6l6jg");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-zinc-900 dark:text-white text-base font-semibold leading-normal">Emily White</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Chicago, IL</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Interested in: Whitening</p>
+</div>
+</div>
+<div class="bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400 text-xs font-semibold px-3 py-1 rounded-full shrink-0">Contacted</div>
+</div>
+<div class="w-full h-20 bg-center bg-no-repeat bg-cover rounded-lg" data-alt="Thumbnail of social media post showing before and after teeth whitening" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjl4-ziBrT6kQPDL8ZSsNfMVWJeUtVZmhxbKTkbxBk_S_XESe4KbS7IiE6vrnSYUy75THBWLGUQD_Ix1zTKoNBMVKDKLNVwVNaOFcK0RptIPoFkJFxUaxP_tuSPX4tIut768uMGYdMnRZCnSyg812O5pJIPg9J0b10gnAotgo6-ZSMiHHoFK3Ty75Rbi1ukeq8ltEqaQWU9kyO9XUDo8RYEPFcVoa390yajPO8Aj-57NPLkJWVzHSebW1bb5ioucz7Jca4AWxoijI");'></div>
+<div class="flex gap-2 justify-stretch flex-wrap">
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-200 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Message</span>
+</button>
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book</span>
+</button>
+</div>
+</div>
+<!-- Empty State / Upsell Component -->
+<div class="flex flex-col items-center justify-center gap-4 bg-white dark:bg-zinc-900 p-8 rounded-xl shadow-sm text-center">
+<div class="flex items-center justify-center size-16 bg-zinc-100 dark:bg-zinc-800 rounded-full">
+<span class="material-symbols-outlined text-4xl text-zinc-500 dark:text-zinc-400">lock</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-white">Unlock Your Leads Dashboard</h3>
+<p class="text-sm text-zinc-600 dark:text-zinc-400 max-w-xs">Upgrade to Premium to track, manage, and convert your patient leads directly.</p>
+</div>
+<button class="w-full max-w-xs flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold">
+<span class="truncate">Upgrade to Premium</span>
+</button>
+</div>
+</main>
+</div>
+</body></html>

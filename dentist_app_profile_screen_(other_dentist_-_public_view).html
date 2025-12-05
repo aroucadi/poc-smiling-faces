@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dentist Public Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3ecaea",
+            "background-light": "#f6f8f8",
+            "background-dark": "#111e21",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-[#111618] dark:text-white">arrow_back</span>
+</div>
+<h2 class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Dr. Jane Doe</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111618] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-[#111618] dark:text-white">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Profile Header -->
+<div class="flex p-4 @container bg-white dark:bg-background-dark">
+<div class="flex w-full flex-col gap-4 items-start">
+<div class="flex w-full gap-4 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24 min-w-24" data-alt="Profile picture of Dr. Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_7_1vYfBCeZ7QQJ1Iij4drUlmJLOpaXY7_imOv8vvShrXtFdBtn-lHqEcJauBX568vBG8OcWO30poI702yPD_Z-a1gIYccie-Pc6L0cM1QuYlCwmr89pMZeMLJ_F-m7GPyp11jD9n8LnVPkoIkCKu8-nU3mJdxfdMiY9nKyufI-o9FBK6ptxkZvLuWR3VPuKF3q7iR0HUC-9pBbDKOn733yhCMSy2E1xHPTRDicmRYMU3XLPQ8H3FCrgpGPl_OLNGJGQ1PjXHGgU");'></div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-[#111618] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Dr. Jane Doe</p>
+<p class="text-[#638188] dark:text-gray-400 text-base font-normal leading-normal">Orthodontist</p>
+<p class="text-[#638188] dark:text-gray-400 text-base font-normal leading-normal">New York, NY</p>
+</div>
+</div>
+<div class="flex w-full max-w-[480px] gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f4f4] dark:bg-white/10 text-[#111618] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto">
+<span class="truncate">Follow</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto gap-2">
+<span class="material-symbols-outlined !text-[18px]">lock</span>
+<span class="truncate">Message</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Profile Stats -->
+<div class="flex flex-wrap gap-3 px-4 py-3 bg-white dark:bg-background-dark">
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#dce4e5] dark:border-white/20 p-3 items-center text-center">
+<p class="text-[#111618] dark:text-white tracking-light text-2xl font-bold leading-tight">12</p>
+<div class="flex items-center gap-2"><p class="text-[#638188] dark:text-gray-400 text-sm font-normal leading-normal">Years Experience</p></div>
+</div>
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#dce4e5] dark:border-white/20 p-3 items-center text-center">
+<p class="text-[#111618] dark:text-white tracking-light text-2xl font-bold leading-tight">348</p>
+<div class="flex items-center gap-2"><p class="text-[#638188] dark:text-gray-400 text-sm font-normal leading-normal">Cases</p></div>
+</div>
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#dce4e5] dark:border-white/20 p-3 items-center text-center">
+<p class="text-[#111618] dark:text-white tracking-light text-2xl font-bold leading-tight">1.2k</p>
+<div class="flex items-center gap-2"><p class="text-[#638188] dark:text-gray-400 text-sm font-normal leading-normal">Followers</p></div>
+</div>
+</div>
+<!-- Tabs -->
+<div class="pb-3 bg-white dark:bg-background-dark">
+<div class="flex border-b border-[#dce4e5] dark:border-white/20 px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Portfolio</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#638188] dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Reviews</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#638188] dark:text-gray-400 pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">About</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#638188] dark:text-gray-400 pb-[13px] pt-4 flex-1 text-center" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Hours</p>
+</a>
+</div>
+</div>
+<!-- Image Grid (Portfolio Content) -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4 bg-background-light dark:bg-background-dark flex-1">
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Before and after dental procedure image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFpviktdD-5Rz0wcWfdGw9MEg_nwYe8ZOt9g4NSiBpkvQt7UlIg3CLrYpX6nfYHEimIQMnodHXiFXnOkDAMVqg6Jk-rZZl-zZkXn5EWDFtjIrAhKJ65R8fUeohaKqAdBBTnOeNXkdwIoOluiYLzMdZa8Q9CJU-uNeoLnLgO-hx-sRTaexy4dEJUJ1Skhmp3PfSYMt1r_9g1HxLkgbM5uEffyaI6I7wYU9vPK6ZHaN2JUzymKkIDUT6hVvHH1RuOf5ZNJ1LoX50gwo");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Close-up of a smiling patient's teeth" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMYJCGjxL0Rz0DKT_1JbjnrmQUtmDNb_dQ1mIAvDPaNcA05EQpg2UeLEVX9mcHMoscSq-hhyzDTLKHNaLTyqR9nNCesMhWn6xvhNomNiR2TE2_f3ILpcpcTBANLsZDxgll1i0YgcLUY8aGBcSwvPT1qfWJEVq07xSqWslJnk0zM47VPaIG9_n6XnP_C6Xd92PPC3PK9At58gxvTitovgLTDabaoeMGzg4bFeSe2HeGQneULsFcrQb0Tsuyal46ctjLAeMPcmwUfoI");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Dental implant showcased on a model" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-MQzqWHWtH-P0c3xowY4tLO2l9xae1aEspgmuxFx4MW497Xdkt-9CKfJAoofRKYDq6jenhTdxIo2kHWYs3n2vQhSS6QmOBXjIU66QOCZGiWOhigIF8oyJphRAdev9_Z6ePIoQAcJWwp6YobqcFvESKh1TinN7W9iIBwyTDT2CPBQ2kcWK2VRLfH95PlJJPa-qUGuK-e5JmAr5SrnlnihqMTQFbf4XMEK0Y2dkmiM-rNPrL4UkPfpfsRvVT00KFZ1Yg0J8pYKeKA0");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Image of orthodontic braces" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCx0ToU16EEyMN3aLI_KiQKuoJnmcIGvZvCRnrEQhuRtb6PIUh914-wpTmKqOkHIsdQ9hbwTheYzSmk0sZbIFLymMHOaZT0T4NAvBGW2rrbmWQ_RxIspLjDusFoC6U5xVa4XrO50pRkHXSC0-erY24dN1bxsx6VUG6Q_Th3Ww0p0RtVMPHk78824WbQ5NGElTV4dz2ZAZw-tx0AQUibmVpGDtKFDm5U9NXI3o0rN_zhPJx6pMJBN3uyQ-O1-kq1qZm3mCXlG1cr8PU");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Aesthetic dentistry result" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIYrT9YB6Uti9L2rBLYnCfmxM3I3LNGfEjRLXmIEvflyZd7zu6urVgYQ3haOSg_xbgfl0hNK8W4_WHmR5ZOMOI8TTlxQEhbsRxMGGM_TNc9U5X3hENh9B4T-PSbY_SZ_ZnZCR3VzOPoMaMK4NwlpQMXW4uEY9ZqFBAuuI7_mZ2In-vrPeAcrjasZbfvDkCugL-qTSeiG1uNNdzykxP3FGbQg31gclP_Pfr5DhZ0GnJj1Pi9yWg0XXZ3DEjQf6jexJdVWwiol15AyY");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Dental clinic equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf-_PI2l083oUB6be4nm61BmCuF2tvecaw-NFYPfVUZHgseAeqFSLelj8V214q9kDqVERw-jywLpplGlbH3o12JENPCDPSgI-WBbEI9al8rMlMZ_fJhcznP6W72aSzPbUpohGpE75z3hdqTJ1FlYzZSDjwUdv8cw_yuiXASfRIbUlJLqPWEfpIxZM-f-UT62h09IVvefOTEuAEHuKlPxRB8ZxhYCjrmLSzaP9NxWhlsnR4vXTxR7vlgeuBkpfPa5PD05eMWuaTswk");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Cosmetic dentistry before and after" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2IAMidq-byIC0SkMLsv2zO5OG7QjLsLOsmKWB2ENKPcZUPDUa12QU9bKNJclrRREKiS25fxULZuNbH1DnJaFK_ZoN_3VLju_HmVZjHild5Fdp6-G-W5noQl8H9G1xcMX1N54pHRKb5SBBXJROemzlZnwV4pplkyeB3zTnWueQF0ndZr-qigYWY3-KqCIOp1P5SIw3eLHSHmcE1dG7MOELpO4zYl19D5fEecPt-7V4Eh1jLMbc7mlU8i62u8-SQtvrM6Aj2UlVLHc");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Patient consultation in a dental office" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMuHJa8ciyLjBrXxCDU63R5ar8p0FvEBjJSY5BNQnQLvDhSmDtcVjJfN8ol6OvSr8RezdxhKIrLcope07gaf4sYO3NsrmPnhLfjstjXNE3tntkPpFc05mDlLLStCz2bgHob1jR-99uN5BPnUBE7CNZ1RJVcLZIvzxPRkr8E-B-cK1X39EzpTILW5ctskFilwVF5x5Bt2_0VoSEVQGN78-IWx98pjBSlFvaVS_G5skEpnrQetU_RN8SouYgB3yGibQAzQ5pwdFGhao");'></div>
+</div>
+</div>
+</div>
+</body></html>

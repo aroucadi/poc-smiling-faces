@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dentist Profile Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#30c6e8",
+              "background-light": "#f6f8f8",
+              "background-dark": "#111e21",
+              "blue-primary": "#4A90E2",
+              "teal-secondary": "#50E3C2",
+              "gold-accent": "#FFD700",
+              "bg-neutral": "#F2F2F7",
+              "text-primary-light": "#1C1C1E",
+              "text-secondary-light": "#8E8E93",
+              "text-primary-dark": "#FFFFFF",
+              "text-secondary-dark": "#8E8E93",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto max-w-lg bg-background-light dark:bg-background-dark">
+<!-- Header Section -->
+<div class="relative">
+<!-- HeaderImage (Cover Photo) -->
+<div class="@container">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden min-h-[160px] sm:min-h-[200px]" data-alt="Abstract blue and green gradient representing a modern dental clinic interior" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOWXayg7HHcnpDcLRpMNzQAFDaoq6oLsdlP793A5-Zpkkvi62LklqiLqKwejk6oElTAW0ByJVGmxfuYtvC7WtBnjFovNWgkZIlFzheKoWMvjnJvAtvUcjxnSMctyvlh6ESnl3R-SzFvGWqfvfIuDEgS6SlxT3Pb7nNP8VmqD7NIEvVM_ZaVX_NLJFS694Gi4FsT6XigvjK2wSADWhWW7Bla_43ZgovIgp0MGN2AzhW4tYF8Cq3qqSxE1R83n4bSWFPh1yonHpzR7o");'></div>
+</div>
+<!-- ProfileHeader (Modified) -->
+<div class="absolute bottom-0 left-1/2 w-full -translate-x-1/2 translate-y-1/2 transform px-4">
+<div class="flex w-full flex-col items-center gap-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-28 w-28 border-4 border-background-light dark:border-background-dark" data-alt="Headshot of Dr. Evelyn Reed, a smiling woman in professional attire" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCali-NK9LGIuAfngdxMZa_d43RgHSk9qI6Q6nON60gE4cwuq_pRo1FI5uSQNNusnfx9tCnqH3vrdofIUmYy5X62tslzku1bsUsg2o8wgmaCNasO4CnpkvyXVTmMNRDOF-fy03jDy8qtm_jgdPN99ki_DvABCX-uZw9B4hXSqaJGZmtR4U8kVGvx1kYmdSPcFcp-6iObQ7_GvXll8mmhs_m9FS5Bu4Wfa3TCpCyJpQou0rglTAAJIKApwbz4eRmqKhaoGawhoBdEPE");'></div>
+</div>
+</div>
+</div>
+<!-- Name, Title, and Edit Button -->
+<div class="mt-16 flex flex-col items-center px-4 pt-2">
+<div class="flex flex-col items-center justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-2xl font-bold leading-tight">Dr. Evelyn Reed</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">Cosmetic Dentist</p>
+</div>
+<button class="mt-3 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-5 bg-bg-neutral dark:bg-gray-700 text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">
+<span class="truncate">Edit Profile</span>
+</button>
+</div>
+<!-- ProfileStats (Modified) -->
+<div class="flex flex-wrap gap-3 px-4 py-4">
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-3 items-center text-center">
+<p class="text-text-primary-light dark:text-text-primary-dark tracking-tight text-xl font-bold leading-tight">128</p>
+<div class="flex items-center gap-2">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Posts</p>
+</div>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-3 items-center text-center">
+<p class="text-text-primary-light dark:text-text-primary-dark tracking-tight text-xl font-bold leading-tight">1.2k</p>
+<div class="flex items-center gap-2">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Followers</p>
+</div>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-3 items-center text-center">
+<p class="text-text-primary-light dark:text-text-primary-dark tracking-tight text-xl font-bold leading-tight">88%</p>
+<div class="flex items-center gap-1">
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Visibility</p>
+<span class="material-symbols-outlined text-sm text-text-secondary-light dark:text-text-secondary-dark cursor-pointer">info</span>
+</div>
+</div>
+</div>
+<!-- Card (Plan Banner - Modified) -->
+<div class="px-4">
+<div class="flex items-center justify-between gap-4 rounded-xl bg-blue-primary/10 dark:bg-blue-primary/20 p-4">
+<div class="flex flex-col gap-1">
+<p class="text-blue-primary dark:text-white text-base font-bold leading-tight">Free Plan</p>
+<p class="text-text-secondary-light dark:text-gray-300 text-sm font-normal leading-normal">You are on the free plan. Upgrade for more features.</p>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-teal-secondary text-text-primary-light text-sm font-bold leading-normal">
+<span class="truncate">Upgrade</span>
+</button>
+</div>
+</div>
+<!-- BodyText (Bio) -->
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-normal leading-relaxed p-4">
+            Specializing in cosmetic dentistry and smile makeovers with over 10 years of experience. Committed to providing the highest quality of care in a comfortable environment.
+        </p>
+<!-- Tab Navigation (New Component) -->
+<div class="sticky top-0 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-700 px-4">
+<div class="flex justify-around">
+<button class="flex-1 py-3 text-center text-sm font-semibold border-b-2 border-blue-primary text-blue-primary">Posts</button>
+<button class="flex-1 py-3 text-center text-sm font-medium border-b-2 border-transparent text-text-secondary-light dark:text-text-secondary-dark">Testimonials</button>
+<button class="flex-1 py-3 text-center text-sm font-medium border-b-2 border-transparent text-text-secondary-light dark:text-text-secondary-dark">About</button>
+</div>
+</div>
+<!-- Posts Grid (New Component) -->
+<div class="grid grid-cols-3 gap-1 p-1">
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of a teeth whitening procedure" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo3UmfQGwDrDFo6TBqHlFhYU3iLrD20qKNJ4HL6SXhu15ysSXGulsys_KqnBIDw12RS_MjrY3MZ5fv1ciTfX4-wB7JeYVX3N0BGnhrdVAcRz2M7k6Lcy9UnCzROXDUPAcLtXvjOBIZfwUKnKVU4-YAr68Q3lAdD4iv71_83OqPwZXvOnm3XFxcn7coP88NfBP6fg-nrI-f5CE-nQb1h-IzEUMXRdpHajFCGpBXFtJJjeZd91P11N6hNExjI4B0wESUiaxdugUYgc8");'></div>
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of dental veneers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB82ykBmY6PtakuSg58533zgHKauzZogTE4JaKOmtW0K9c5LKhG0C_K-4ZzConw2WDe2d9x4X0qy-FUJfmdS367ro_3dpXO2PvSNoZxt3cZshtI0xVJHstUGAUb3qBnnr4FtvtIzRsTPL1pSQAHqaAzIKryiEIYUUPkb9nh3z3YycdUEIFRRK_uPqVNbQKnRCdRk2EVNwf8juyqQXpYFdOUVuXWm1S3W2kLT5MSJCHRk4P84WR3h9_DBeC0fxkpc_n75_CXs4teBRQ");'></div>
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of dental implants" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARqF3wB9H1Zleyns9NRiAwqINSnsrKij-eKdHXwN6BQ8Eo0vObR9CSnfj4PxcG85itVhKTiciNwK5McZzX1CwvMKgfJrLbYpXXobzTjLIvZBb2jkoaQbrmLEokKOs26wR6oqHSmBiFR5MnCP4so86rl1i6--LEXMjB2iwL7bYdbnTeVjbxf4r5FQqTH472db7mtrJZxqZhOS5qZY9hNCrBMu2t0BHgnJdf4NQzrJXV7YnXt9g7xLDPFnUnKy5Q9ZIyg5GWHZDZ95E");'></div>
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of orthodontic treatment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpQH8KyeN5vWLTkIpBzRSyJ5R7p2eP3HE892Tb6D9JZI9e6NttXqmVCuCzenpPZF82M0PNa642ZVu-qoWA4fwP0txljKjLGXbgABXGykCB9MPZIkX5f7e0bAJAACbfvDkwhqtcBusP6PAGTD4uT5gRfc7N95JCGWOuKkdOQpgy2_86OH3DpplaK3O8vuyXdhmMsC4Hofo73WmIRnK3tmHBUvsCAU-p3DKE_FFs-3wd52a4GGYEJwqWo6ClHHM4WoNry_J7AEsgzBc");'></div>
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of a smile makeover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArUh5dHGBFmqYKocBZMYfiJMQq1B3xB-hWupvC5IIBdYIyxtccBHJCFc0L85UowZVkubMIuTSbQuHiVOEPTIPmGB2FrODaS-m87fQ6P6OgIB_NSFFEezIflrd3rXtGWBlpKw7wyUfs1GibFs6jp4ieHlMDWNDDmtY763bXYPcpTJ8oI3rddMXMcu7Tyqx31bJwbuIKvptFdJL8kwUqCBiMk9qdNwetwfaQpA241jgt4NTCHimnipqMfNA-R4r0alzaTEIeZRB7kVE");'></div>
+<div class="aspect-square bg-cover bg-center" data-alt="Before and after of composite bonding" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlppyjdXqDMTjzAj-3uP3AYFbDhH6gnoZi-Cph5IN3CRH3a83fqo5-EyTqVhd3Hd2bLujt5KSQy9o9EWxHdHssdz53nzd_-cuCIIup-DSJV2nPmW7a6Ahc67UDNlUeTcjhW0_oqvuFqij3GvnW2aEBs0XbfnKfu5-fdHokQxHNwsSi0Mj0r4esUmRa284eyZAt-4uc8UcT6nOKKhV55-DlTiQ4AY2wzWcavxqQkjJUTtCwHHjglHDGBrVmtvbre8NgdpX3kBtvqjk");'></div>
+</div>
+<!-- Floating Action Button (New Component) -->
+<button class="fixed bottom-6 right-6 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-blue-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<div class="h-20 bg-background-light dark:bg-background-dark"></div> <!-- Spacer for FAB -->
+</div>
+</body></html>

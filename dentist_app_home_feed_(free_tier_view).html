@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dental Social Feed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4ec0da",
+              "background-light": "#f6f7f8",
+              "background-dark": "#121d20",
+              "neutral-gray": "#6C757D",
+              "dark-charcoal": "#212529",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex h-20 items-center justify-between border-b border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 px-4 backdrop-blur-sm">
+<div class="flex size-12 shrink-0 items-center">
+<div class="size-10 rounded-full bg-cover bg-center bg-no-repeat" data-alt="User's profile avatar, a woman smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcdW078MpxeKiBgjTRdZwrX4Zb5MqrwLlroc-c433KBg8gj4MwgmTm04VAIWKzZnFThAfruVZanwj-YUoP9W0Na8vY031wtM0me2ck619dSKnp0ThXwo7rraUWfG_XAgdjHO5_Ggu7do7Mjq0L-pc_LqLl2M_MqWrbSxAdlodM4QsgMCaCF493Nrib6OFAlPfRF10gMdNrymsNkqiObCEb_uczwKORqU5KUibugUX2VX75kFow_4hOb3AV9KBMWmb9PKMzZh8X3_o");'></div>
+</div>
+<a class="flex h-10 w-auto items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-bold text-white shadow-sm transition-transform active:scale-95" href="#">Create Post</a>
+</div>
+<!-- Main Feed Content -->
+<main class="flex-grow space-y-4 pt-4 pb-20">
+<!-- Post Card 1 -->
+<div class="flex flex-col bg-white dark:bg-dark-charcoal/30">
+<!-- Card Header -->
+<div class="flex items-center gap-3 px-4 py-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10 shrink-0" data-alt="Profile picture of Dr. Angela Carmichael" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnVpQA9TiHWk6lqOJLByjgrCHN5eBJlEROtiSOjGadAFUGMNB-rwQpvDH58i-XtyE06pSGKvp1FVOwAbiBHJixUIZ_IACnUjodNevWhkp3FnSKPjXsXdQ8lzX11MKg1mFEgiKf3q0QVTdEkv1iXDOkaYPwUftObCSyokqLzQ0TlhE7_gWqDof1jWa8G3cTOBQJvF31GW1nP0bKmZFsK55mDx4OKr8M7jqpCVvMAKJyo6st_QD4Aju62Gq86atFa-Qud1uQ3sPAm-M");'></div>
+<div class="flex flex-col">
+<p class="text-base font-bold leading-tight text-dark-charcoal dark:text-white">Dr. Angela Carmichael</p>
+<p class="text-sm font-normal text-neutral-gray dark:text-gray-400">Carmichael Dental Arts</p>
+</div>
+</div>
+<!-- Header Image with Slider -->
+<div class="@container">
+<div class="min-h-80 bg-cover bg-center flex flex-col justify-end overflow-hidden" data-alt="Before and after photo of a patient's smile transformed with porcelain veneers." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6mwseyFHObpsrqN2lXblnkldrSICiO1ARQ57HkWJZQ4jX8yYfSgBTTr9SDLk1IwCmSl3mAd4nhklt9WCu0dvXw9UeW6jtygPXe5EyXj2Mqm2RhMQ9SzQ4Ai9hcp8CdQkhF3wpv6f574LYZsGzG38e0JHJAOKezAJ5uLzxQ6gzjz_IUrtAhqam2KtY9VefBhgQqGsk35WMbUUGJSft0coQuHKT2ifDKF9RzFCCk8XvymH47agsC9BqNEUKZ0EHb2ntbVmIw9t22oE");'>
+<div class="flex justify-center gap-2 p-5">
+<div class="size-1.5 rounded-full bg-white"></div>
+<div class="size-1.5 rounded-full bg-white opacity-50"></div>
+</div>
+</div>
+</div>
+<!-- Caption -->
+<p class="text-dark-charcoal dark:text-gray-300 text-sm font-normal leading-normal pb-1 pt-3 px-4">Transformed this patient's smile with a full set of porcelain veneers. The process was completed over two visits, focusing on...</p>
+<p class="text-neutral-gray dark:text-gray-400 text-sm font-normal leading-normal pb-3 px-4 underline cursor-pointer">see more</p>
+<!-- Engagement Stats -->
+<div class="flex items-center gap-4 border-b border-t border-gray-200 dark:border-gray-700 px-4 py-2 text-xs text-neutral-gray dark:text-gray-400">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">favorite</span>
+<span>1.2k Likes</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">chat_bubble</span>
+<span>88 Comments</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">recommend</span>
+<span>42 Recommends</span>
+</span>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-3 gap-1 px-4 py-1">
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-primary transition-colors hover:bg-primary/10">
+<span class="material-symbols-outlined text-xl !fill-1">favorite</span>
+<span>Like</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-neutral-gray dark:text-gray-300 transition-colors hover:bg-gray-500/10">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+<span>Comment</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-neutral-gray dark:text-gray-300 transition-colors hover:bg-gray-500/10">
+<span class="material-symbols-outlined text-xl">share</span>
+<span>Share</span>
+</button>
+</div>
+</div>
+<!-- Post Card 2 -->
+<div class="flex flex-col bg-white dark:bg-dark-charcoal/30">
+<!-- Card Header -->
+<div class="flex items-center gap-3 px-4 py-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10 shrink-0" data-alt="Profile picture of Dr. Marcus Thorne" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAC2kwezR_JrO_y28SF37NEb8ur1DbhYhkPnKcEIXko5xATqZlWiOFSNNL9keqallcRx8FhLtf7onWLvUAwot6Ksr8cgp5x0WFLqy_K1bcL7a-sQVjqtfksYX2yhQXT6-calmfMXTd-5vG0xc8Y3cnhB_CD847OTp4k7eeklSiE1a-JjkD3QoZP6yldWIbZcydAqhI1SIlA_K5BPvSyV3f04hrZut2jsKHAsHwn9Y4jH6moZsk8wYVVjXp-oDz4f6YWGO6ggNWdZX8");'></div>
+<div class="flex flex-col">
+<p class="text-base font-bold leading-tight text-dark-charcoal dark:text-white">Dr. Marcus Thorne</p>
+<p class="text-sm font-normal text-neutral-gray dark:text-gray-400">Thorne Precision Dentistry</p>
+</div>
+</div>
+<!-- Header Image with Slider -->
+<div class="@container">
+<div class="min-h-80 bg-cover bg-center flex flex-col justify-end overflow-hidden" data-alt="Before and after of a complex dental implant surgery." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGWqi-i1_HG23tNXkoiECQNO_AJCau9Wt0e2U1tA0rCup4O9K-wfkFBLFP23MjSJ-hnDLDFGqXCjh6-izlPTuyf-38iu390FXb6Kj4ciOHm3YE8RmDSm0zLshQI40FJlndh33g8_sqPzZA0odcMoVSIsuWiyQnBYZw1tm3VlNwhVwywu8W8-oZdj4xqP2zYh5PoXMqE-ptbcMY_5bc6_SLwCNEBHI2G_ZKFYkso5mKbu8D4hg7bOq3Zl0F6v7yHNG3TbPGaB9P2PM");'>
+<div class="flex justify-center gap-2 p-5">
+<div class="size-1.5 rounded-full bg-white opacity-50"></div>
+<div class="size-1.5 rounded-full bg-white"></div>
+</div>
+</div>
+</div>
+<!-- Caption -->
+<p class="text-dark-charcoal dark:text-gray-300 text-sm font-normal leading-normal pb-1 pt-3 px-4">A challenging but rewarding implant case. Our patient can now smile with confidence after years of discomfort. The procedure...</p>
+<p class="text-neutral-gray dark:text-gray-400 text-sm font-normal leading-normal pb-3 px-4 underline cursor-pointer">see more</p>
+<!-- Engagement Stats -->
+<div class="flex items-center gap-4 border-b border-t border-gray-200 dark:border-gray-700 px-4 py-2 text-xs text-neutral-gray dark:text-gray-400">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">favorite</span>
+<span>894 Likes</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">chat_bubble</span>
+<span>102 Comments</span>
+</span>
+<span class="flex items-center gap-1.5 text-gray-400 dark:text-gray-500">
+<span class="material-symbols-outlined text-base">lock</span>
+<span class="italic">Analytics</span>
+</span>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-3 gap-1 px-4 py-1">
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-neutral-gray dark:text-gray-300 transition-colors hover:bg-gray-500/10">
+<span class="material-symbols-outlined text-xl">favorite</span>
+<span>Like</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-neutral-gray dark:text-gray-300 transition-colors hover:bg-gray-500/10">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+<span>Comment</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-bold text-neutral-gray dark:text-gray-300 transition-colors hover:bg-gray-500/10">
+<span class="material-symbols-outlined text-xl">share</span>
+<span>Share</span>
+</button>
+</div>
+</div>
+<!-- Loading Skeleton -->
+<div class="flex animate-pulse flex-col space-y-3 bg-white dark:bg-dark-charcoal/30 p-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+<div class="flex-grow space-y-2">
+<div class="h-4 w-2/3 rounded bg-gray-200 dark:bg-gray-700"></div>
+<div class="h-3 w-1/2 rounded bg-gray-200 dark:bg-gray-700"></div>
+</div>
+</div>
+<div class="h-80 w-full rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+<div class="space-y-2">
+<div class="h-3 rounded bg-gray-200 dark:bg-gray-700"></div>
+<div class="h-3 w-5/6 rounded bg-gray-200 dark:bg-gray-700"></div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

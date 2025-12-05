@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Post Detail View</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3182CE",
+              "background-light": "#FFFFFF",
+              "background-dark": "#1A202C",
+              "text-light": "#2D3748",
+              "text-dark": "#E2E8F0",
+              "text-subtle-light": "#718096",
+              "text-subtle-dark": "#A0AEC0",
+              "surface-light": "#F7FAFC",
+              "surface-dark": "#2D3748",
+              "border-light": "#E2E8F0",
+              "border-dark": "#4A5568",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 p-4 pb-3 backdrop-blur-sm">
+<button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Post</h2>
+<button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</button>
+</div>
+<!-- Main Content -->
+<div class="flex-1 pb-24">
+<!-- User Profile Header (ListItem) -->
+<div class="flex items-center justify-between gap-4 bg-background-light dark:bg-background-dark px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 shrink-0 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Profile picture of Dr. Angela Carmichael" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqIZZlk_xHaUKAsWa1XXwVH3G1BMEEOCNxrEhQcJBPihvSANXn4tf3cSed2DZNUFcmMNkjxfOlx0OJ2P1HLeitWGTboM3Xp4JGwaBaQaxgz5rFxe-04oj6yWdqORL2MuE7Hx_MmMJsIthWLp2xacUgaNp5qOQN0wQMaOxmGCNl83MomGjiTKcCi0ZXurRuDKs7rSWNVFj7j5DWYwxTbHmkvSMS3DGvADQmmAyljv9PuOvmn_iz42y6l2CHsKubMkNjMmdwWM8M-g0");'></div>
+<div>
+<p class="text-base font-bold leading-normal text-text-light dark:text-text-dark">Dr. Angela Carmichael</p>
+<p class="text-sm font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">Orthodontist</p>
+</div>
+</div>
+<div class="shrink-0"><button class="rounded-full bg-primary px-4 py-2 text-sm font-medium leading-normal text-white">Follow</button></div>
+</div>
+<!-- Carousel -->
+<div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex w-full snap-x snap-mandatory items-stretch gap-0">
+<div class="flex h-full min-w-full flex-1 snap-center flex-col gap-2 p-4 pt-2">
+<div class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat" data-alt="Before image of dental procedure" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgAhbX06nqw5e-ldO8jDKGySS1l2f_07u71UBMCM5_VayjHt7WftpCKSHKgPflvaMD6RV57aA_8tHbJz6VRco_HHE2vAeDNsljXpO-NHVQeOa-dlVGZlHCSk_FgzdTlRbqGPkbqK0FXUIDXBlPGWGpyoFJ3LeaRvC2_gNnqJI8ksvYtJh_7WUHXEFdxREpPbhCsLFkbB1hCyLsf2Jyx3pgDvdH0ce1CFel3U6eP3IkhbjI3L0fnCitK92RVhkFfS9GxPHhawRBhMg");'></div>
+<p class="text-center text-sm font-medium leading-normal text-text-subtle-light dark:text-text-subtle-dark">Before</p>
+</div>
+<div class="flex h-full min-w-full flex-1 snap-center flex-col gap-2 p-4 pt-2">
+<div class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat" data-alt="After image of dental procedure" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCp14igDur3Za9DrEw-Ko5Xm3x6dx59bo5rUSRRPhnSrpkiHK09LkQ7A6RMt1ygnwK0CNP24bJmzH4asR3Pnx-Ld6ayRrli3Pn-ZHw-odJB6ncLub0uEyIH9ScJ0mCYfpD-hlYZvCjVd25zoBdv2wfBmRCPu2pz7hgUquDmmpuq7H4AlkYMuM1Yapgq--puz5zewyHpJpTS2iDUlTUecZHbnPHw1v-ebbRlzHV6nwqHu2dXZ5W7iu_kZ3rpU5gobGsu4kM1wBfTZP4");'></div>
+<p class="text-center text-sm font-medium leading-normal text-text-subtle-light dark:text-text-subtle-dark">After</p>
+</div>
+</div>
+</div>
+<!-- Body Text / Caption -->
+<p class="px-4 pb-3 pt-1 text-base font-normal leading-relaxed text-text-light dark:text-text-dark">Case Study: Correction of severe malocclusion in an adult patient using a combination of clear aligners and targeted orthodontic appliances over an 18-month period. Patient reported high satisfaction with the functional and aesthetic outcome.</p>
+<!-- Meta Text / Engagement -->
+<p class="px-4 pb-4 pt-1 text-sm font-normal leading-normal text-text-subtle-light dark:text-text-subtle-dark">127 likes • 34 comments • 12 recommendations</p>
+<!-- Action Button Bar -->
+<div class="flex items-center justify-around border-y border-border-light dark:border-border-dark px-4 py-2">
+<button class="flex flex-col items-center gap-1.5 rounded-lg px-3 py-1 text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+<span class="text-xs font-medium">Like</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 rounded-lg px-3 py-1 text-text-subtle-light dark:text-text-subtle-dark">
+<span class="material-symbols-outlined text-2xl">chat_bubble</span>
+<span class="text-xs font-medium">Comment</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 rounded-lg px-3 py-1 text-text-subtle-light dark:text-text-subtle-dark">
+<span class="material-symbols-outlined text-2xl">recommend</span>
+<span class="text-xs font-medium">Recommend</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 rounded-lg px-3 py-1 text-text-subtle-light dark:text-text-subtle-dark">
+<span class="material-symbols-outlined text-2xl">bookmark</span>
+<span class="text-xs font-medium">Save</span>
+</button>
+</div>
+<!-- Testimonial Request CTA -->
+<div class="mx-4 my-6 flex items-center gap-4 rounded-lg bg-surface-light dark:bg-surface-dark p-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-2xl">badge</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">Did you treat this patient?</p>
+<p class="text-sm text-primary">Request testimonial</p>
+</div>
+</div>
+<!-- Comments Section -->
+<div class="space-y-4 px-4">
+<!-- Comment 1 -->
+<div class="flex items-start gap-3">
+<img class="mt-1 h-8 w-8 shrink-0 rounded-full" data-alt="Profile picture of Dr. Ben Carter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_bvmcOL-erJc-HO9hVoz8LvYGEcBtNkeOJqOr-UJuJgb9fMVMya1wpYG1XyAp2neSipo2UN1XvTMB3TC6GN7FTY1BTS1_xIPoKy9Wbx8lbg6mglz0cwfC5j1x2JTVTrVICHRXhJkNb0Ziec0uPhnKNsrH8biL99-mrwueGhtXlB9P-gzXofgu58FfsrGsMGlzF6rWBFxshQUK1dYFRnihQUhGX_32W9MHmrm9gnzSQJmW3qSARI494RoDbJzI62XnyzHbLMqs__A"/>
+<div class="flex-1">
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark p-3">
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">Dr. Ben Carter</p>
+<p class="text-sm text-text-light dark:text-text-dark">Incredible result! What brand of aligners did you use for this case?</p>
+</div>
+<div class="mt-1 flex items-center gap-3 pl-3">
+<span class="text-xs text-text-subtle-light dark:text-text-subtle-dark">2h ago</span>
+<button class="text-xs font-semibold text-text-subtle-light dark:text-text-subtle-dark">Reply</button>
+</div>
+<!-- Nested Reply -->
+<div class="mt-3 flex items-start gap-3">
+<img class="mt-1 h-8 w-8 shrink-0 rounded-full" data-alt="Profile picture of Dr. Angela Carmichael" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCOwytUBE1awnAc9YIk4FOLWrD_6VcIX3Zjh8IPU6Zw5EdnD9Aync2yQ_zM-6OloRqLZU-yqTzW3HKd5Wdc82ZT9ppZ1DsWEWJMMBdQUH0cdkPRDn-9oC0TabpqeR4rGIyMM9mC11TL-ONVh6Hyt9SCys54x_qRG9FCHbh6PqBNygL0z8HPoDfsRH8DwEPfZ40t0WX-N1st4taSxcP3Dy_X8lyBkqQs9BNC4MKyjQbaD8gAXVlDWzzf5vrnEvXDCL8MWMJptQG2PI"/>
+<div class="flex-1">
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark p-3">
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">Dr. Angela Carmichael</p>
+<p class="text-sm text-text-light dark:text-text-dark">Thanks, Dr. Carter. We used Invisalign with custom attachments for precision.</p>
+</div>
+<div class="mt-1 flex items-center gap-3 pl-3">
+<span class="text-xs text-text-subtle-light dark:text-text-subtle-dark">1h ago</span>
+<button class="text-xs font-semibold text-text-subtle-light dark:text-text-subtle-dark">Reply</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="flex items-start gap-3">
+<img class="mt-1 h-8 w-8 shrink-0 rounded-full" data-alt="Profile picture of Dr. Sarah Jenkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsFIncVHbsyoPvO_QMka2xBtIDFuHcKUR7-zlwfppVrODbvE0ZJSIsYKEzFevyoEu6yCUYlsweomuqzN-iPH6xZxIoVwqMaXrKucnltYXTnqV4AvAY9pJiFqYNkfz-_mr-SbR77z6kzjA1-MvTJxSpp3DFuXjoZBMRSGl5HOXZtSVXe2xJMqLNDRzKk7c-8JfJ2r-0mG2Kz4mWXNppWk6J1cPhIh7w8QYJCips5abT6FsVlluiwYxR8_3uEAgOuIgUY5RfG1lPPC0"/>
+<div class="flex-1">
+<div class="rounded-lg bg-surface-light dark:bg-surface-dark p-3">
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">Dr. Sarah Jenkins</p>
+<p class="text-sm text-text-light dark:text-text-dark">Beautiful work. The patient must be thrilled with their new smile!</p>
+</div>
+<div class="mt-1 flex items-center gap-3 pl-3">
+<span class="text-xs text-text-subtle-light dark:text-text-subtle-dark">5h ago</span>
+<button class="text-xs font-semibold text-text-subtle-light dark:text-text-subtle-dark">Reply</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Comment Input Field -->
+<div class="fixed bottom-0 z-10 w-full max-w-md border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-2">
+<div class="flex items-center gap-2">
+<img class="h-9 w-9 shrink-0 rounded-full" data-alt="Current user's profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIy-iR-fJqo8d1kt6FHIIhlT31XSCUyUMeg98Qm2-liWkZ_ovt8ZWInSjZmhKE8nldRtBKWoupIBKKbQ-jcG7rdTuv8BPc7T-iaGZsaw1UxN5NpS336B7LwzEqve7CcVh6YjzavCd344sebDrDJVfK3oYiP2G182PfJ0fnv1C1Q0Y3e3Z38QpZ7pPNqSZLbX2DqfTCkkJI4CXPEndMw3WubmaPkv6AMOvnm1tCQZn6u0WoiR4i4kStNPwef4vBvz-j1enoI-J37XA"/>
+<input class="h-10 flex-1 rounded-full border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark px-4 text-sm text-text-light dark:text-text-dark placeholder-text-subtle-light dark:placeholder-text-subtle-dark focus:border-primary focus:ring-primary" placeholder="Add a comment..." type="text"/>
+<button class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-2xl">send</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
